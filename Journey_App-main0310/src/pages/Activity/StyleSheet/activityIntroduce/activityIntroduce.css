@@ -1,0 +1,568 @@
+.activityIntroduceBody {
+  /* HTML5 display-role reset for older browsers */
+  background-image: url("../../../../images/main/background.png");
+  background-attachment: fixed;
+}
+
+.activityIntroduceBody html, .activityIntroduceBody body, .activityIntroduceBody div, .activityIntroduceBody span, .activityIntroduceBody applet, .activityIntroduceBody object, .activityIntroduceBody iframe,
+.activityIntroduceBody h1, .activityIntroduceBody h2, .activityIntroduceBody h3, .activityIntroduceBody h4, .activityIntroduceBody h5, .activityIntroduceBody h6, .activityIntroduceBody p, .activityIntroduceBody blockquote, .activityIntroduceBody pre,
+.activityIntroduceBody a, .activityIntroduceBody abbr, .activityIntroduceBody acronym, .activityIntroduceBody address, .activityIntroduceBody big, .activityIntroduceBody cite, .activityIntroduceBody code,
+.activityIntroduceBody del, .activityIntroduceBody dfn, .activityIntroduceBody em, .activityIntroduceBody img, .activityIntroduceBody ins, .activityIntroduceBody kbd, .activityIntroduceBody q, .activityIntroduceBody s, .activityIntroduceBody samp,
+.activityIntroduceBody small, .activityIntroduceBody strike, .activityIntroduceBody strong, .activityIntroduceBody sub, .activityIntroduceBody sup, .activityIntroduceBody tt, .activityIntroduceBody var,
+.activityIntroduceBody b, .activityIntroduceBody u, .activityIntroduceBody i, .activityIntroduceBody center,
+.activityIntroduceBody dl, .activityIntroduceBody dt, .activityIntroduceBody dd, .activityIntroduceBody ol, .activityIntroduceBody ul, .activityIntroduceBody li,
+.activityIntroduceBody fieldset, .activityIntroduceBody form, .activityIntroduceBody label, .activityIntroduceBody legend,
+.activityIntroduceBody table, .activityIntroduceBody caption, .activityIntroduceBody tbody, .activityIntroduceBody tfoot, .activityIntroduceBody thead, .activityIntroduceBody tr, .activityIntroduceBody th, .activityIntroduceBody td,
+.activityIntroduceBody article, .activityIntroduceBody aside, .activityIntroduceBody canvas, .activityIntroduceBody details, .activityIntroduceBody embed,
+.activityIntroduceBody figure, .activityIntroduceBody figcaption, .activityIntroduceBody footer, .activityIntroduceBody header, .activityIntroduceBody hgroup,
+.activityIntroduceBody menu, .activityIntroduceBody nav, .activityIntroduceBody output, .activityIntroduceBody ruby, .activityIntroduceBody section, .activityIntroduceBody summary,
+.activityIntroduceBody time, .activityIntroduceBody mark, .activityIntroduceBody audio, .activityIntroduceBody video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+.activityIntroduceBody article, .activityIntroduceBody aside, .activityIntroduceBody details, .activityIntroduceBody figcaption, .activityIntroduceBody figure,
+.activityIntroduceBody footer, .activityIntroduceBody header, .activityIntroduceBody hgroup, .activityIntroduceBody menu, .activityIntroduceBody nav, .activityIntroduceBody section {
+  display: block;
+}
+
+.activityIntroduceBody body {
+  line-height: 1;
+}
+
+.activityIntroduceBody ol, .activityIntroduceBody ul {
+  list-style: none;
+}
+
+.activityIntroduceBody blockquote, .activityIntroduceBody q {
+  quotes: none;
+}
+
+.activityIntroduceBody blockquote:before, .activityIntroduceBody blockquote:after,
+.activityIntroduceBody q:before, .activityIntroduceBody q:after {
+  content: '';
+  content: none;
+}
+
+.activityIntroduceBody table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.activityIntroduceBody .wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.activityIntroduceBody .wrap .wrapTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 120px;
+}
+
+.activityIntroduceBody .wrap .wrapTitle .wrapTitleItem {
+  padding-bottom: 10px;
+}
+
+.activityIntroduceBody .wrap .wrapTitle .wrapTitleItem h1 {
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.activityIntroduceBody .wrap .wrapTitle .wrapTitleItem pre {
+  font-size: 20px;
+}
+
+.activityIntroduceBody .wrap .wrapTitle .creatActivity {
+  padding-top: 10px;
+}
+
+.activityIntroduceBody .wrap .wrapTitle .creatActivity a {
+  color: #1697d5;
+  padding-top: 30px;
+  margin: 10px 20px 0px 75px;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.activityIntroduceBody .wrap .wrapBody {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft {
+  width: 750px;
+  margin-right: 30px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .credit {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: inherit;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  overflow: hidden;
+  min-width: 600px;
+  max-width: 1200px;
+  width: calc(100% - 0px);
+  height: 400px;
+}
+
+@media screen and (max-width: 718px) {
+  .activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options {
+    min-width: 520px;
+  }
+  .activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option:nth-child(5) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 638px) {
+  .activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options {
+    min-width: 440px;
+  }
+  .activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option:nth-child(4) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 558px) {
+  .activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options {
+    min-width: 360px;
+  }
+  .activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 478px) {
+  .activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options {
+    min-width: 280px;
+  }
+  .activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option:nth-child(2) {
+    display: none;
+  }
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .imgHiking {
+  background-image: url("../../../../images/background/hiking.jpg");
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option {
+  position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  background: var(--optionBackground, var(--defaultBackground, #e6e9ed));
+  background-size: auto 120%;
+  background-position: center;
+  cursor: pointer;
+  -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option.active {
+  -webkit-box-flex: 10000;
+      -ms-flex-positive: 10000;
+          flex-grow: 10000;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  max-width: 600px;
+  margin: 0px;
+  border-radius: 40px;
+  background-size: auto 100%;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option.active .shadow {
+  -webkit-box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+          box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option.active .label {
+  bottom: 20px;
+  left: 20px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option.active .label .info > div {
+  left: 0px;
+  opacity: 1;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option.active:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option:not(.active) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 30px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option:not(.active) .shadow {
+  bottom: -40px;
+  -webkit-box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+          box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option:not(.active) .label {
+  bottom: 10px;
+  left: 10px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option:not(.active) .label .info > div {
+  left: 20px;
+  opacity: 0;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option .shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 120px;
+  -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option .label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option .label .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 10px;
+  color: white;
+  white-space: pre;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option .label .info > div {
+  position: relative;
+  -webkit-transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option .label .info .main {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .activeImage .options .option .label .info .sub {
+  -webkit-transition-delay: 0.1s;
+          transition-delay: 0.1s;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main {
+  margin-top: 20px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .introduce h2 {
+  margin-top: 34px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .introduce p {
+  line-height: 36px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .introduce pre {
+  line-height: 30px;
+  font-size: 22px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .introduce li {
+  line-height: 24px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message {
+  margin-top: 30px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message h2 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageBoard {
+  margin-top: 30px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageBoard .messageList {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: solid 1px #d6d6d6;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageBoard .messageList .messageListImg img {
+  width: 72px;
+  border-radius: 36px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageBoard .messageList .messageContainer {
+  margin-left: 15px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageBoard .messageList .messageContainer .messageContainerInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageBoard .messageList .messageContainer .messageContainerText {
+  margin: 20px 50px 10px 0px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageFrom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageFrom .messageFromImg img {
+  width: 72px;
+  border-radius: 36px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageFrom .from {
+  margin-left: 15px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageFrom .from textarea {
+  margin: auto;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageFrom .send {
+  margin-top: 44px;
+  margin-left: 15px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageFrom .send a {
+  border: #d0d0d0;
+  border-radius: 20px;
+  background-color: #6bc1e9;
+  background-image: linear-gradient(315deg, #6bc1e9 0%, #80ced7 74%);
+  padding: 8px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .message .messageFrom .send :hover {
+  background-color: #fff;
+  border: 1px solid #1697d5;
+  background-image: none;
+  color: #1697d5;
+  text-decoration: none;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .applicantsArea {
+  width: 300px;
+  min-height: 170px;
+  border: 3px rgba(175, 175, 175, 0.315) solid;
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .applicantsArea .applicantsNum {
+  font-size: 20px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .applicantsArea .applicants {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .applicantsArea .applicants .applicantsPeople {
+  margin-top: -40px;
+  margin-left: 110px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .applicantsArea .applicants .applicantsPeople .applicant {
+  line-height: 45px;
+  cursor: pointer;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .applicantsArea .applicants .applicantsPeople .applicant .memberImg {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .applicantsArea .applicants .applicantsPeople .applicant .memberImg:hover {
+  -webkit-box-shadow: 1px 1px 1px #707070;
+          box-shadow: 1px 1px 1px #707070;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .applicantsArea .applicants .applicantsPeople .applicant .memberName {
+  cursor: pointer;
+}
+
+.activityIntroduceBody .wrap .wrapBody .wrapLeft .main .container .applicantsArea .applicants .applicantsPeople .applicant .memberName:hover {
+  font-weight: 600;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  height: 850px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarBox {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem {
+  width: 350px;
+  top: 0;
+  margin-left: 10px;
+  background-color: rgba(255, 255, 255, 0.578);
+  padding: 20px 20px 100px 20px;
+  border-radius: 5px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem .navbarItemFirst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem .navbarItemFirst h2 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem .navbarItemFirst .activityIntroduceEdit {
+  color: #1697d5;
+  margin-left: 3px;
+  line-height: 35px;
+  font-size: 25px;
+  font-weight: 800;
+  display: block;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem .navbarItemFirst .activityIntroduceEdit span {
+  color: #1697d5;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem .navbarItemFirst .activityIntroduceEditHide {
+  display: none;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem .navbarItemText {
+  font-weight: 600;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem h3 {
+  line-height: 36px;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem h3 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem h3 a img {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  margin-right: 10px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem table tr td {
+  font-size: 20px;
+  padding-right: 25px;
+  padding-bottom: 10px;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem .map {
+  height: 200px;
+  overflow: hidden;
+}
+
+.activityIntroduceBody .wrap .wrapBody .activityIntroduceNavbar .navbarItem .apply {
+  float: right;
+  margin-top: 30px;
+}
+/*# sourceMappingURL=activityIntroduce.css.map */

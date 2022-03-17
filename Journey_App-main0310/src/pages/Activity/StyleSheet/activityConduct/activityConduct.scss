@@ -1,0 +1,874 @@
+// ----- 匯入設定樣式檔 -----
+@import "../../../../styles/_var.scss";
+// ------------------------
+@import "../importStyle/Initialization.scss";
+
+// @import "./activityConductRwd.scss";
+
+//TODO
+
+// 預設值
+
+$fontcolor: #264148;
+$d6: #d6d6d6;
+$border: solid #000 1px;
+// ----- 這段可能會把別人的樣式蓋過去喔 -----
+// * {
+//   margin: 0;
+//   padding: 0;
+//   font-family: Microsoft JhengHei, sans-serif;
+//   letter-spacing: 0.02em;
+//   box-sizing: border-box;
+// }
+
+.activityConductBody {
+  // color: $fontcolor;
+  .pageHr {
+    width: 5px;
+    height: 1844px;
+    left: 297.5px;
+    bottom: 0;
+    position: absolute;
+    border: 1px #264148 solid;
+    border-radius: 2px;
+    color: #000;
+    background-color: #264148;
+    top: 165px;
+    z-index: 5;
+  }
+  .newPageTitlePoint {
+    font-size: 40px;
+    display: inline;
+    color: $fontcolor;
+  }
+  p {
+    font-weight: bold;
+    font-size: 24px;
+  }
+}
+.activityConductBody {
+  height: 100vh;
+
+  // border: $border;
+  section {
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+  }
+}
+.activityConductBody {
+  background-image: url("../../../../images/main/background.png");
+  background-attachment: fixed;
+
+  .nextPage {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    transform: translate(0, -50%);
+    color: rgb(0, 0, 0);
+    font: normal 600 20px/1 "Josefin Sans", sans-serif;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    transition: opacity 0.3s;
+    padding-top: 70px;
+    font-size: 15px;
+    &:hover {
+      opacity: 0.5;
+    }
+    span {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 15px;
+      height: 15px;
+      margin-left: -8px;
+      border-left: 2px solid rgb(0, 0, 0);
+      border-bottom: 2px solid rgb(0, 0, 0);
+      transform: rotate(-45deg);
+      animation: sdb 1.5s infinite;
+      box-sizing: border-box;
+      @keyframes sdb {
+        0% {
+          transform: rotate(-45deg) translate(-20px, 20px);
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          transform: rotate(-45deg) translate(-30px, 30px);
+          opacity: 0;
+        }
+      }
+    }
+  }
+  #section0 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    // background-image: url("../../../../images/main/background.png" );
+    // background-attachment: fixed;
+    .section0Area {
+      .leftTitle {
+        .joinUs {
+          position: absolute;
+          font-size: 30px;
+          left: 240px;
+          top: 140px;
+          color: $fontcolor;
+          font-weight: 600;
+        }
+        .pageTitle {
+          position: absolute;
+          font-size: 25px;
+          left: 289px;
+          top: 200px;
+          color: $fontcolor;
+        }
+      }
+      .section0Content {
+        width: 650px;
+        height: 450px;
+        position: absolute;
+        top: 200px;
+        left: 450px;
+        .guideNarrative {
+          position: absolute;
+          font-size: 22px;
+          color: $fontcolor;
+          top: 5px;
+          left: 25px;
+          p {
+            margin-bottom: 5px;
+          }
+        }
+        .guideLvChartArea {
+          width: 200px;
+          height: 200px;
+          background-color: blue;
+        }
+      }
+    }
+  }
+
+  #section01 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    // background-image: url("../../../../images/main/background.png" );
+    // background-attachment: fixed;
+    .section01Area {
+      .leftTitle {
+        .pageTitle {
+          position: absolute;
+          font-size: 25px;
+          left: 289px;
+          top: 140px;
+          color: $fontcolor;
+        }
+      }
+      .section01Content {
+        // border: $border;
+        width: 650px;
+        // height: 400px;
+        //background-color: blanchedalmond;
+        position: absolute;
+        top: 200px;
+        left: 445px;
+        //名稱
+        .setName {
+          position: relative;
+          height: 65px;
+          p {
+            font-size: 20px;
+            display: inline;
+            position: absolute;
+            // top: 30px;
+          }
+          input {
+            font-size: 16px;
+            width: 500px;
+            // padding: 8px;
+
+            resize: none;
+            border-radius: 10px;
+            border: 1px $bgcolor solid;
+            box-shadow: 1px 1px 3px #858585;
+            position: absolute;
+            left: 80px;
+            // top: 18px;
+          }
+        }
+        // 簡介
+        .setIntroduction {
+          position: relative;
+          height: 65px;
+          // border: $border;
+          p {
+            font-size: 20px;
+            display: inline;
+            position: absolute;
+            // top: 30px;
+            // border: $border;
+          }
+          input {
+            font-size: 16px;
+            width: 500px;
+            // padding: 8px;
+            // height: 85px;
+            resize: none;
+            border-radius: 10px;
+            border: 1px $bgcolor solid;
+            box-shadow: 1px 1px 3px #858585;
+            position: absolute;
+            left: 80px;
+          }
+        }
+        //日期
+        .date {
+          position: relative;
+          margin: 0px 0px 30px 0px;
+          // border: $border;
+          p {
+            font-size: 20px;
+            display: inline;
+            position: absolute;
+            // top: 10px;
+            // border: $border;
+          }
+
+          .dateInput {
+            // position: absolute;
+            // left: 80px;
+            // margin-top: 10px;
+            margin-left: 80px;
+            // border: 1px $bgcolor solid;
+            // box-shadow: 1px 1px 3px #858585;
+            // background-color: #264148;
+
+            .ant-input-group {
+              width: 50%;
+              // border: 1px $bgcolor solid;
+              .ant-picker {
+                border-radius: 10px;
+                box-shadow: 1px 1px 3px #858585;
+                // height: 50px;
+              }
+            }
+          }
+        }
+        //時間
+        .timeText {
+          // border: $border;
+          // margin-left: 80px;
+          left: 300px;
+          position: absolute;
+          top: 0;
+        }
+        .timeInput {
+          display: inline;
+          // border: $border;
+          margin-left: 90px;
+          position: absolute;
+          left: 290px;
+          top: 0px;
+          input {
+            width: 192px;
+          }
+          .ant-input {
+            // height: 50px;
+
+            border-radius: 10px;
+            box-shadow: 1px 1px 3px #858585;
+            width: 200px;
+          }
+        }
+        //縣市
+        
+        .location {
+          position: relative;
+          margin: 30px 0px;
+          // border: $border;
+          p {
+            font-size: 20px;
+            display: inline;
+            position: absolute;
+            // top: 10px;
+          }
+          .locationInput {
+            margin-left: 80px;
+            .searchCity {
+              font-size: 16px;
+              // width: 500px;
+              // padding: 8px;
+              // height: 50px;
+              resize: none;
+              border-radius: 20px;
+              border: 1px $bgcolor solid;
+              .ant-select{
+                // box-shadow: 1px 1px 3px #858585;
+                border-radius: 10px;
+
+              .ant-select-selector{
+                height: 35px;
+                box-shadow: 1px 1px 2px #858585;
+                border-radius: 10px;
+              }
+            }
+              // box-shadow: 1px 1px 3px #858585;
+              // position: absolute;
+              // left: 120px;
+              // top: 18px;
+              // margin-left: 5px;
+            }
+          }
+        }
+
+        //地址
+        .address {
+          position: relative;
+          margin: 30px 0px;
+          // border: $border;
+          p {
+            font-size: 20px;
+            display: inline;
+            position: absolute;
+            // top: 10px;
+          }
+          .addressInput {
+            margin-left: 80px;
+            input {
+              font-size: 16px;
+              width: 500px;
+              // padding: 8px;
+              // height: 50px;
+              resize: none;
+              border-radius: 10px;
+              border: 1px $bgcolor solid;
+              box-shadow: 1px 1px 3px #858585;
+              // position: absolute;
+              // left: 120px;
+              // top: 18px;
+              // margin-left: 5px;
+            }
+          }
+        }
+
+        //類型
+        
+        .activityType {
+          position: relative;
+          margin: 30px 0px;
+          // border: $border;
+          // height: 65px;
+          p {
+            font-size: 20px;
+            display: inline;
+            position: absolute;
+            // top: 10px;
+          }
+          .activityTypeInput {
+            margin-left: 80px;
+            select {
+              font-size: 16px;
+              width: 250px;
+              padding: 5px 0px 5px 5px;
+              color:#cdb5fc;
+              // padding: 8px;
+              // height: 50px;
+              resize: none;
+              border-radius: 10px;
+              border: 1px $bgcolor solid;
+              box-shadow: 1px 1px 3px #858585;
+              // position: absolute;
+              // left: 120px;
+              // top: 18px;
+              // margin-left: 5px;
+            }
+          }
+        }
+        // 人數
+        .acceptNum {
+          margin: 20px 0px;
+          position: relative;
+          // border: $border;
+          p {
+            font-size: 20px;
+            display: inline;
+            // position: absolute;
+            // top: 10px;
+            // border: $border;
+          }
+          span {
+            position: absolute;
+            left: 80px;
+            // .people {
+            //   display: inline;
+            //   font-size: 16px;
+            //   width: 40px;
+            //   padding-left: 13px;
+            //   padding-right: 15px;
+            //   height: 40px;
+            //   resize: none;
+            //   border-radius: 10px;
+            //   border: 1px $bgcolor solid;
+            //   box-shadow: 1px 1px 3px #858585;
+            //   // position: absolute;
+            //   // left: 120px;
+            //   // top: 18px;
+            //   margin-left: 5px;
+            //   margin-right: 25px;
+            // }
+
+            #people {
+              width: 50px;
+              border: none;
+              text-align: center;
+              height: 30px;
+              font-size: 18px;
+              margin-right: 20px;
+              // margin-left: 25px;
+              background: none;
+              border-bottom: 1px $fontcolor solid;
+            }
+            .numBtn {
+              background-color: #fff;
+              font-size: 17px;
+              border-radius: 10px;
+              padding: 2px 5px;
+              width: 25px;
+              text-align: center;
+              border: 1px $bgcolor solid;
+              box-shadow: 1px 1px 3px #c7c7c7;
+              margin-right: 20px;
+              cursor: pointer;
+              &:hover {
+                box-shadow: 3px 3px 5px #c7c7c7;
+              }
+            }
+          }
+        }
+        .place {
+          // margin: 30px 0px;
+          margin-top: 100px;
+          // margin: 40px 0px 0px 0px;
+          position: relative;
+          // border: $border;
+          p {
+            position: absolute;
+
+            font-size: 20px;
+            display: inline;
+          }
+          span {
+            position: absolute;
+            left: 80px;
+            font-size: 20px;
+            label {
+              margin-right: 40px;
+            }
+          }
+        }
+        .transportation {
+          margin-top: 30px;
+          position: relative;
+          p {
+            font-size: 20px;
+            display: inline;
+          }
+          span {
+            position: absolute;
+            left: 80px;
+            font-size: 20px;
+            label {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  #section02 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../../images/main/background.png");
+    background-attachment: fixed;
+    .section02Area {
+      .leftTitle {
+        .pageTitle {
+          position: absolute;
+          font-size: 25px;
+          left: 289px;
+          top: 20px;
+          color: $fontcolor;
+        }
+      }
+      //活動內容
+      .activitySetContent {
+        p{
+          position: absolute;
+          top: 80px;
+          left: 450px;
+          font-size: 20px;
+        }
+        .activitySetContentTextarea {
+          width: 650px;
+          height: 200px;
+          font-size: 18px;
+          padding: 15px;
+          background-color: rgba(255, 255, 255, 0.5);
+          border-radius: 20px;
+          position: absolute;
+          top: 125px;
+          left: 450px;
+          border: none;
+          textarea {
+            &::placeholder {
+              font-size: 3em;
+            }
+          }
+        }
+      }
+      //注意事項
+      .activitySetNotice {
+        p{
+          position: absolute;
+          top: 340px;
+          left: 450px;
+          font-size: 20px;
+
+        }
+        .activitySetNoticeTextarea {
+          width: 650px;
+          height: 200px;
+          background-color: rgba(255, 255, 255, 0.5);
+          padding: 15px;
+          position: absolute;
+          border-radius: 20px;
+          font-size: 18px;
+          top: 385px;
+          left: 450px;
+          border: none;
+          textarea {
+            &::placeholder {
+              font-size: 3em;
+            }
+          }
+        }
+      }
+      
+      
+    }
+  }
+
+  #section03 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../../images/main/background.png");
+    background-attachment: fixed;
+    .section03Area {
+      .leftTitle {
+        .pageTitle {
+          position: absolute;
+          font-size: 25px;
+          left: 289px;
+          top: 20px;
+          color: $fontcolor;
+        }
+      }
+      .ActivityConductImagesContent {
+        border-radius: 20px;
+
+        width: 650px;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.5);
+        position: absolute;
+        top: 180px;
+        left: 450px;
+        .activityImage {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          .activityImageItemFS{
+            display: flex;
+            // border: $border;
+            margin-bottom: 30px;
+          }
+          .activityImageItemTF{
+            display: flex;
+          }
+          .activityImageChang {
+              // width: 100%;
+              position: relative;
+              .activityImageChangItem {
+                margin: 3px 30px 0px 0px;
+                background-color: #d6d6d6;
+                // background-image: url('../../../../images/activity/ActivityImageBackgroundImage.jpg');
+                .header-banner-image{                  
+                  width: 100%;
+                  height: 100%;
+                }               
+                // background-color: #858585;
+                // background: url('../../../../images/activity/ActivityImageBackgroundImage.jpg');
+                  background-position: center;
+                  background-size: cover;
+                  height: 180px;
+                  width: 180px;
+                  // border: 2px solid $secondarycolor;
+                  content: '點擊後新增照片';
+                  cursor: pointer;
+                  &::after {
+                      opacity: 0;
+                      content: "更新照片";
+                      position: absolute;
+                      // left: -1px;
+                      // top: -1px;
+                      width: 185px;
+                      height: 185px;
+                      border: 5px solid $fontcolor;
+                      transition: opacity 0.2s ease-in-out;
+                      color:$fontcolor;
+                      text-align: center;
+                      line-height: 150px;
+                      font-size: 18px;
+                      font-weight: 600;
+                      background-color: rgba(255,255,255,0.8);
+
+                  }
+                  &:hover {
+                      &::after {
+                          opacity: 1;
+                      }
+                  }
+                  
+              }
+          }
+      }
+      }
+      .change-modal {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        // background-color: rgba(0, 0, 0, 0.9);
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .change-container {
+            min-width: 300px;
+            min-height: 300px;
+            max-height: 700px;
+            max-width: 1300px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // border: 1px solid #fff;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            & > h3 {
+                margin-top: 10px;
+                font-size: 24px;
+                margin-bottom: 20px;
+                color: $fontcolor;
+            }
+            .temp-img-show {
+                max-width: 300px;
+            }
+            .close-btn {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                // font-size: 26px;
+                color: #fff;
+                background-color: $primarycolor;
+                padding: 2px 2px;
+                bdrs {
+                  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+                  border-radius: 10px;
+                }
+                // height: 30px;
+                * {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .confirm-banner {
+                position: absolute;
+                bottom: 15px;
+                left: 50%;
+                // transform: translateX(-50%);
+                padding: 2px 18px;
+                // @include bdrs;
+                bdrs {
+                  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+                  border-radius: 10px;
+                }
+                border: none;
+                background-color: $primarycolor;
+                color: #fff;
+                font-size: 18px;
+                &.change-btn {
+                    left: auto;
+                    right: -15px;
+                    bottom: 30px;
+                    // transition: all 0.3s ease-in-out;
+                    &:hover {
+                        bottom: 33px;
+                    }
+                }
+            }
+            .show-status {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                width: 200px;
+                background-color: #fff;
+                // height: 100px;
+                flex-direction: column;
+                padding: 15px 0px;
+                // @include bdrs;
+                bdrs {
+                  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+                  border-radius: 10px;
+                }
+                & > img {
+                    margin-bottom: 15px;
+                    width: 60px;
+                }
+                .progress-bar-show {
+                    position: relative;
+                    border: 2px solid $primarycolor;
+                    height: 15px;
+                    width: 150px;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    & > div {
+                        background-color: $primarycolor;
+                        width: 0%;
+                        height: 100%;
+                    }
+                }
+            }
+            .upload-wrap {
+                height: 130px;
+                width: 130px;
+                border-radius: 65px;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // border: 1px solid #000;
+                overflow: hidden;
+                background-image: linear-gradient(to bottom, $primarycolor 50%, #ffffff 50%);
+                background-size: 100% 200%;
+                transition: all 1s;
+                color: #ffffff;
+                font-size: 70px;
+                input[type="file"] {
+                    height: 100px;
+                    width: 100px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    cursor: pointer;
+                }
+                // &:hover {
+                //     // background-position: 0 100%;
+                //     // color: $primarycolor;
+                // }
+            }
+        }
+    }
+      //上傳照片底
+      //活動內容
+   
+    }
+    .submitBtn {
+      @include mainBtn;
+      position: absolute;
+      
+      left: 80%;
+      // top :0px;
+      bottom:180px
+    }
+  }
+  #section04 {
+    position: relative;
+
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../../images/main/background.png");
+    background-attachment: fixed;
+    .section04Area {
+      .leftTitle {
+        .pageTitle {
+          position: absolute;
+          font-size: 24px;
+          left: 289px;
+          top: 80px;
+          color: $fontcolor;
+          .newPageTitlePoint {
+            font-size: 40px;
+          }
+        }
+      }
+      .section04Content {
+        width: 700px;
+        height: 380px;
+        background-color: blanchedalmond;
+        position: absolute;
+        top: 210px;
+        left: 400px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px #85858593;
+        padding: 20px;
+      }
+    }
+    .submitBtn {
+      @include mainBtn;
+      position: absolute;
+      // bottom: 300px;
+      margin-bottom: 50px;
+      left: 75%;
+    }
+  }
+
+  //  1280*577
+
+  //  1536*721
+  // .pageHr{
+  //   height: 2000px;
+  // }
+  // .pageHr{
+  //   height: 100px;
+  // }
+  // @media (max-width:1280px) {
+
+  //   @include joinGuideRwd
+
+  // }
+
+  // @media (max-width:1281px) {
+  //   body{
+  //     @include activityConductRwd
+  //   }
+
+  // }
+}
